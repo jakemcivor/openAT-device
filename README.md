@@ -10,11 +10,6 @@ PHOTO
  --->
 ![Image Description](Photos/Device_Photo.jpg)
 
-<!--- 
-## More info at
- - [Makers Making Change Forum Thread](TBD) 
- - [Makers Making Change Project Page](TBD)
- --->
 
 
 ## Getting Started
