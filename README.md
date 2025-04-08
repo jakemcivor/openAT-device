@@ -90,7 +90,7 @@ Include any information related to the development of the design. This may inclu
 --->
 
 <!-- ABOUT US START -->
-## About Makers Making Change
+404: Not Found## About Makers Making Change
 <img src="https://www.makersmakingchange.com/wp-content/uploads/logo/mmc_logo.svg" width="500" alt="Makers Making Change Logo">
 
 Makers Making Change is an initiative of [Neil Squire](https://www.neilsquire.ca/), a Canadian non-profit that uses technology, knowledge, and passion to empower people with disabilities.
@@ -105,4 +105,3 @@ We are committed to cultivating a network of volunteer makers who support people
 
 ### Contact Us
 For technical questions, to get involved, or to share your experience we encourage you to visit [MMC Forum](https://forum.makersmakingchange.com) or contact info@makersmakingchange.com
-<!-- ABOUT US END -->
