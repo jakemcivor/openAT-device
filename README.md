@@ -89,7 +89,7 @@ ATTRIBUTION
 Include any information related to the development of the design. This may include who identified the initial challenge, who contributed to the design
 --->
 
-
+<!-- ABOUT US START -->
 ## About Makers Making Change
 <img src="https://www.makersmakingchange.com/wp-content/uploads/logo/mmc_logo.svg" width="500" alt="Makers Making Change Logo">
 
@@ -105,3 +105,4 @@ We are committed to cultivating a network of volunteer makers who support people
 
 ### Contact Us
 For technical questions, to get involved, or to share your experience we encourage you to visit [MMC Forum](https://forum.makersmakingchange.com) or contact info@makersmakingchange.com
+<!-- ABOUT US END -->
