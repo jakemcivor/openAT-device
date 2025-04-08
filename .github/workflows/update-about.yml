@@ -13,7 +13,7 @@ jobs:
 
       - name: Fetch shared About Us section
         run: |
-          curl -s https://raw.githubusercontent.com/Makers-Making-Change/blob/main/README.md -o about.md
+          curl -s https://github.com/makersmakingchange/Makers-Making-Change/blob/main/README.md -o about.md
 
 
       - name: Replace About Us section in README
