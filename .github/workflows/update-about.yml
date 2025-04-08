@@ -23,10 +23,23 @@ jobs:
             exit 1
           fi
 
-          # Create updated README
-          awk '/<!-- ABOUT US START -->/{ print; system("cat about.md"); next }
-               /<!-- ABOUT US END -->/{ printed=1 }
-               printed==0 { print }' README.md > temp.md
+          awk '
+            BEGIN { inside=0 }
+            /<!-- ABOUT US START -->/ {
+              print
+              system("cat about.md")
+              inside=1
+              next
+            }
+            /<!-- ABOUT US END -->/ {
+              inside=0
+              print
+              next
+            }
+            inside == 0 {
+              print
+            }
+          ' README.md > temp.md
 
           mv temp.md README.md
 
