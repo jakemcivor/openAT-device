@@ -1,0 +1,39 @@
+name: Update About Section
+
+on:
+  workflow_dispatch:  # enables manual trigger
+
+jobs:
+  update-about:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v3
+
+      - name: Fetch shared About Us section
+        run: |
+          curl -s https://raw.githubusercontent.com/Makers-Making-Change/blob/main/README.md -o about.md
+
+
+      - name: Replace About Us section in README
+        run: |
+          if [ ! -f README.md ]; then
+            echo "README.md not found!"
+            exit 1
+          fi
+
+          # Create updated README
+          awk '/<!-- ABOUT US START -->/{ print; system("cat about.md"); next }
+               /<!-- ABOUT US END -->/{ printed=1 }
+               printed==0 { print }' README.md > temp.md
+
+          mv temp.md README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add README.md
+          git diff --cached --quiet || (git commit -m "Update About Us section" && git push)
